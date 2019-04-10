@@ -1,3 +1,8 @@
+/*
+C17315456
+Seungmin Lee
+DT282/2
+*/
 package ie.tudublin;
 
 import java.util.ArrayList;
@@ -21,6 +26,7 @@ public class UI extends PApplet
 	public void settings()
 	{
 		//size(500, 800);
+		//My laptop is quite small to use size(500,800)
 		size(500, 500);
 		separate(381);
 		separate(1);
@@ -37,7 +43,6 @@ public class UI extends PApplet
 
 	void drawRect()
 	{
-		colorMode(RGB);
 		stroke(0);
 		noFill();
 
