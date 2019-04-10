@@ -45,20 +45,31 @@ public class UI extends PApplet
 		float gap = height / numBoxes;
 		for(int box = 0 ; box < numBoxes ; box ++)
 		{
-			rect(180, box * (gap-30), gap + 30, 50) ;
+			rect(180, (box * gap)+10, gap + 30, 50) ;
 		}
 	}
 
-	void drawLine()
+	void drawLine1()
 	{
 		stroke(0);
 
 		float numLines = 4;
 		float gap = height / numLines;
-		for(int line = 0 ; line < numLines ; line++)
+		for(int lin = 0 ; lin < numLines ; lin++)
 		{
-			//float x = 1 *gap;
-			line(100, line * (gap-30), 80 , 80);
+			line(100, (lin * gap)+30, 180 , (lin * gap)+30);
+		}
+	}
+
+	void drawLine2()
+	{
+		stroke(0);
+
+		float numLines = 4;
+		float gap = height / numLines;
+		for(int lin = 0 ; lin < numLines ; lin++)
+		{
+			line( 335, (lin * gap)+30, 415 , (lin * gap)+30);
 		}
 
 		
@@ -67,7 +78,8 @@ public class UI extends PApplet
 	public void draw()
 	{		
 		drawRect();
-		drawLine();
+		drawLine1();
+		drawLine2();
 
 	}
 }
